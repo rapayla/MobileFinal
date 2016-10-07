@@ -21,15 +21,6 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TOUCH"
-        android:id="@+id/tchbtn"
-        android:layout_marginTop="110dp"
-        android:layout_below="@+id/textView"
-        android:layout_centerHorizontal="true" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:text="QUADRANT"
         android:id="@+id/quad"
         android:layout_centerVertical="true"

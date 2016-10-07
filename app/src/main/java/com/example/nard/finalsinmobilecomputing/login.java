@@ -17,26 +17,10 @@ public class login extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        thbtn = (Button) findViewById(R.id.tchbtn);
+
         hehe=(Button) findViewById(R.id.quad);
 
-        thbtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(login.this,OnTouchActivity.class);
-                startActivity(intent);
 
-            }
-        });
-
-        thbtn.setOnTouchListener(new View.OnTouchListener() {
-            @Override
-            public boolean onTouch(View view, MotionEvent motionEvent) {
-                Intent intent = new Intent(login.this,OnTouchActivity.class);
-                startActivity(intent);
-                return false;
-            }
-        });
         hehe.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
