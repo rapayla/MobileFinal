@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/FinalsInMobileComputing.iml" filepath="$PROJECT_DIR$/FinalsInMobileComputing.iml" />
+      <module fileurl="file://$PROJECT_DIR$/apaylaRFIN.iml" filepath="$PROJECT_DIR$/apaylaRFIN.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>

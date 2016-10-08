@@ -1,21 +1,24 @@
 package com.example.nard.finalsinmobilecomputing;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MotionEvent;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 
-/**
- * Created by nard on 10/4/2016.
- */
-public class quadrant extends AppCompatActivity {
+
+public class quard extends AppCompatActivity {
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.quadrant);
+        setContentView(R.layout.activity_quard);
+
+
 
         final ImageView qd = (ImageView) findViewById(R.id.quad);
         final EditText xa = (EditText) findViewById(R.id.editText3);
@@ -26,6 +29,8 @@ public class quadrant extends AppCompatActivity {
         final EditText ydiff = (EditText) findViewById(R.id.editText8);
         final EditText mo = (EditText) findViewById(R.id.editText9);
         final EditText quad = (EditText) findViewById(R.id.editText10);
+
+
 
         qd.setOnTouchListener(new View.OnTouchListener() {
             float x1, x2, y1, y2;
@@ -50,7 +55,7 @@ public class quadrant extends AppCompatActivity {
                         String motion = "";
                         String quadrant = "";
 
-                        if (x1 > x2) {
+                        if (x1 < x2) {
                             xdif = x1 - x2;
                             motion = "Swipe Right and";
                         } else {
@@ -86,6 +91,13 @@ public class quadrant extends AppCompatActivity {
 
             }
         });
+    }
+
+    @Override
+    public void onBackPressed() {
+        Intent intent = new Intent(quard.this,login.class);
+        startActivity(intent);
+
     }
 }
 

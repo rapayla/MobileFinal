@@ -1,32 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.nard.finalsinmobilecomputing">
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
-        android:label="FirstAndroidApp_MorningClass"
+        android:label="apaylaRFIN"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-
-        <activity android:name=".SplashScreen"
-            android:label="FirstAndroidApp_MorningClass">
+        <activity
+            android:name=".SplashScreen"
+            android:label="apaylaRFIN">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <activity android:name=".MainActivity"
-            android:label="FinalsInMobileComputing">
+        <activity
+            android:name=".MainActivity"
+            android:label="apaylaRFIN">
             <intent-filter>
                 <action android:name="com.example.nard.finalsinmobile.Mainactivity" />
+
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-
         <activity android:name=".login" />
-        <activity android:name=".quadrant" />
-        <activity android:name=".sign_up"></activity>
+        <activity android:name=".sign_up" />
+        <activity android:name=".quard"></activity>
     </application>
 
 </manifest>

@@ -9,7 +9,7 @@ import android.widget.Button;
 
 public class login extends AppCompatActivity {
 
-    Button thbtn,hehe;
+    Button thbtn, hehe;
 
 
     @Override
@@ -18,23 +18,36 @@ public class login extends AppCompatActivity {
         setContentView(R.layout.activity_login);
 
 
-        hehe=(Button) findViewById(R.id.quad);
+        hehe = (Button) findViewById(R.id.quad);
 
 
         hehe.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(login.this,quadrant.class);
+                Intent intent = new Intent(login.this, quard.class);
                 startActivity(intent);
             }
         });
         hehe.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View view, MotionEvent motionEvent) {
-                Intent intent = new Intent(login.this,quadrant.class);
+                Intent intent = new Intent(login.this,quard.class);
                 startActivity(intent);
                 return false;
             }
         });
-    };
+
+    }
+
+        @Override
+        public void onBackPressed() {
+            Intent intent = new Intent(Intent.ACTION_MAIN);
+            intent.addCategory(Intent.CATEGORY_HOME);
+            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+            startActivity(intent);
+    }
 }
+
+
+
+
